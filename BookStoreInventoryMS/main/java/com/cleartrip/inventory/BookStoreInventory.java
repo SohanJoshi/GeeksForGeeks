@@ -33,7 +33,7 @@ public class BookStoreInventory implements Inventory {
 		return currentCount;
 	}
 
-	protected Map<Item, Integer> getAvailableItems() {
+	public Map<Item, Integer> getAvailableItems() {
 		return availableItems;
 	}
 
