@@ -1,12 +1,11 @@
 package com.cleartrip.inventory;
 
-import java.util.Map;
-import java.util.Map.Entry;
-
+import com.cleartrip.item.Item;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.cleartrip.item.Item;
+import java.util.Map;
+import java.util.Map.Entry;
 
 public class BookStoreInventoryManager implements InventoryManager {
 	

@@ -1,8 +1,8 @@
 package com.cleartrip.inventory;
 
-import java.util.Map;
-
 import com.cleartrip.item.Item;
+
+import java.util.Map;
 
 public interface Inventory {
 

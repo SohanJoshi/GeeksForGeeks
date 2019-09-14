@@ -1,12 +1,11 @@
 package com.client.bookstore;
 
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-
-import org.junit.jupiter.api.Test;
-
 import com.cleartrip.inventory.BookStoreInventoryManager;
 import com.cleartrip.item.Item;
+import org.junit.jupiter.api.Test;
+
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 public class BookStore {
 

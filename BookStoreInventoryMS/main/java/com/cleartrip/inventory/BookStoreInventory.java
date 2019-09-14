@@ -1,9 +1,9 @@
 package com.cleartrip.inventory;
 
+import com.cleartrip.item.Item;
+
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
-
-import com.cleartrip.item.Item;
 
 public class BookStoreInventory implements Inventory {
 

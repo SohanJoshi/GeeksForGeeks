@@ -1,8 +1,8 @@
 package com.parkinglot.vehicle;
 
-import java.util.ArrayList;
-
 import com.parkinglot.parkingspot.ParkingSpot;
+
+import java.util.ArrayList;
 
 public abstract class Vehicle {
 	protected ArrayList<ParkingSpot> parkingSpots = new ArrayList<>();
