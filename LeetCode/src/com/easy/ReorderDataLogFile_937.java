@@ -6,27 +6,31 @@ public class ReorderDataLogFile_937 {
     public String[] reorderLogFiles(String[] logs) {
 
         Arrays.sort(logs, (log1, log2) ->  {
-            String word1 = log1.substring(log1.indexOf(" ") + 1);
-            String words1[] = word1.split("\\s");
-            String word2 = log1.substring(log2.indexOf(" ") + 1);
-            String words2[] = word2.split("\\s");
+            int index1 = log1.indexOf(" ");
+            int index2 = log2.indexOf(" ");
 
-            boolean alpha1 = Character.isAlphabetic(words1[0].charAt(0));
-            boolean alpha2 = Character.isAlphabetic(words2[0].charAt(0));
+            String words1 = log1.substring(index1 + 1);
+            String words2 = log2.substring(index2 + 1);
 
-            if(!alpha1 && !alpha2)
+            boolean isAlpha1 = Character.isAlphabetic(words1.charAt(0));
+            boolean isAlpha2 = Character.isAlphabetic(words2.charAt(0));
+
+            if(!isAlpha1 && !isAlpha2)
+                return 0;
+            if(!isAlpha1)
                 return 1;
-            if(!alpha1)
+            if(!isAlpha2)
                 return -1;
-            if(!alpha2)
-                return 1;
 
-            int compare = word1.compareTo(word2);
+            int compare = words1.compareTo(words2);
 
-            if(compare == 0)
-                compare = log1.substring(0, log1.indexOf(" ")).compareTo(log2.substring(0, log2.indexOf(" ")));
+            if(compare != 0)
+                return compare;
 
-            return compare;
+            String iden1 = log1.substring(0, index1);
+            String iden2 = log2.substring(0, index2);
+
+            return iden1.compareTo(iden2);
         });
 
         return logs;
