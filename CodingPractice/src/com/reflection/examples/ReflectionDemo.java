@@ -1,6 +1,5 @@
 package com.reflection.examples;
 
-import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
 public class ReflectionDemo {

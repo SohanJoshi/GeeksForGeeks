@@ -1,11 +1,6 @@
 package com.jdbc.sqlserver.example;
 
-import java.sql.CallableStatement;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Types;
+import java.sql.*;
 
 /**
  * 1. import java.sql.*;

@@ -1,10 +1,6 @@
 package com.hrank.ctci.graphs.bfs;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
-import java.util.Scanner;
+import java.util.*;
 
 public class ShortestReachInAGraph {
     public static class Graph {

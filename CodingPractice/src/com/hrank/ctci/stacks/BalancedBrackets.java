@@ -1,10 +1,6 @@
 package com.hrank.ctci.stacks;
 
-import java.util.Deque;
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.Map;
-import java.util.Scanner;
+import java.util.*;
 
 public class BalancedBrackets {
 
